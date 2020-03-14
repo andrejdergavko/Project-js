@@ -1,0 +1,47 @@
+.authentication-card {
+  position: absolute;
+  display: flex;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  perspective: 2000px;
+}
+
+.authentication-card__flip-card {
+  display: block;
+  position: relative;
+  width: 380px;
+  height: 520px;
+}
+
+.authentication-card__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background: linear-gradient(70deg, #5e21cf, #9744dbad), url('https://i2.rozetka.ua/goods/1834848/13422187_images_1834848493.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 50px 60px -14px rgba(0, 0, 0, 0.295);
+  border-radius: 7px;
+}
+
+.authentication-card__side_back {
+  transform: rotateY(-180deg);
+}
+
+.authentication-card__button-back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: rgb(243, 243, 243);
+  background: none;
+  border: none;
+  transform: translateZ(60px);
+  backface-visibility: hidden;
+}

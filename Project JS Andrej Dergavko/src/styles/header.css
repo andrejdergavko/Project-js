@@ -1,0 +1,31 @@
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -300px;
+  padding: 0 30px 300px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYdtJUeJd1SrM9sgbuK4dLN9DeCCPv6mENxy28LYVQ5a0yvrlhBw&s);
+  background-size: cover;
+  background-position: top;
+}
+
+.header__page-title {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.header__exit-button {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  color: #fff;
+  transition: 0.05s;
+}
+
+.header__exit-button:hover {
+  color: rgb(253, 104, 111);
+}

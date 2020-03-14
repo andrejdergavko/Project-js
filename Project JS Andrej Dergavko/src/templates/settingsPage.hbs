@@ -1,0 +1,89 @@
+<div class="settings-page" id="settings-page">
+  <div class="settings info-card">
+    <div class="settings__title">Профиль</div>
+    <div class="settings__user-settings" id="user-settings">
+
+      <form class="settings__form row" name="changeGender">
+        <label for="settings-input-gender" class="settings__label col-sm-6 col-form-label">Пол</label>
+        <div class="col-sm-4">
+          <select class="settings__input form-control" id="settings-input-gender" name="gender" data-currentValue="{{gender}}" data-action="setGender" required>
+            <option></option>
+            <option value="man">Мужской</option>
+            <option value="woman">Женский</option>
+          </select>
+        </div>
+        <div class="settings__submit-box col-sm-2">
+          <input type="submit" class="settings__submit button" value="Изменить" disabled>
+        </div>
+      </form>
+
+      <form class="settings__form row" name="changeHeight">
+        <label for="settings-input-height" class="settings__label col-sm-6 col-form-label">Рост</label>
+        <div class="col-sm-4">
+          <input type="number" class="settings__input form-control" id="settings-input-height" name="height" value="{{height}}" data-currentValue="{{height}}" data-action="setHeight" required>
+        </div>
+        <div class="settings__submit-box col-sm-2">
+          <input type="submit" class="settings__submit button" value="Изменить" disabled>
+        </div>
+      </form>
+
+      <form class="settings__form row" name="changeAge">
+        <label for="settings-input-age" class="settings__label col-sm-6 col-form-label">Возраст</label>
+        <div class="col-sm-4">
+          <input type="number" class="settings__input form-control" id="settings-input-age" name="age" value="{{age}}" data-currentValue="{{age}}" data-action="setAge" required>
+        </div>
+        <div class="settings__submit-box col-sm-2">
+          <input type="submit" class="settings__submit button" value="Изменить" disabled>
+        </div>
+      </form>
+
+      <form class="settings__form row" name="changeDesiredWeight">
+        <label for="settings-input-desired-weight" class="settings__label col-sm-6 col-form-label">Желаемый вес</label>
+        <div class="col-sm-4">
+          <input type="number" class="settings__input form-control" id="settings-input-desired-weight" name="desiredWeight" value="{{desiredWeight}}" data-currentValue="{{desiredWeight}}" data-action="setTargetWeight" required>
+        </div>
+        <div class="settings__submit-box col-sm-2">
+          <input type="submit" class="settings__submit button" value="Изменить" disabled>
+        </div>
+      </form>
+      
+      <span class="settings__message-box"></span>
+    </div>
+
+    <div class="settings__title">Изменить пароль</div>
+    <div class="settings__change-password">
+
+      <form class="settings__form" name="changePassword">
+        
+        <div class="form-group row">
+          <label for="settings-input-current-password" class="settings__label col-sm-6 col-form-label">Текущий пароль</label>
+          <div class="col-sm-4">
+            <input type="password" class="settings__input form-control" id="settings-input-current-password" name="currentPassword" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="settings-input-new-password" class="settings__label col-sm-6 col-form-label">Новый пароль</label>
+          <div class="col-sm-4">
+            <input type="password" class="settings__input form-control" id="settings-input-new-password" name="newPassword" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="settings-input-new-password-again" class="settings__label col-sm-6 col-form-label">Новый пароль еще раз</label>
+          <div class="col-sm-4">
+            <input type="password" class="settings__input form-control" id="settings-input-new-password-again" name="newPasswordAgain" required>
+          </div>
+          <div class="settings__submit-box col-sm-2">
+            <input type="submit" class="settings__submit button" value="Изменить">
+          </div>
+        </div>
+
+        <span class="settings__message-box"></span>
+        
+      </form>
+      
+    </div>    
+
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.personal-data-form {
+  display: block;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 40px 60px;
+  background: linear-gradient(70deg, #5e21cf, #9744dbad), url('https://i2.rozetka.ua/goods/1834848/13422187_images_1834848493.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(233, 233, 233);
+  border-radius: 7px;
+}
+
+.personal-data-form__title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.personal-data-form__text {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  font-weight: 300;
+}
+
+.personal-data-form__submit {
+  width: 100%;
+  margin: 15px 0 8px;
+  padding: 7px;
+  color: rgb(226, 226, 226);
+  font-size: 18px;
+  border: none;
+  background-color: #23ad93;
+  border-radius: 5px;
+}

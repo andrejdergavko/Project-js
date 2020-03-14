@@ -1,0 +1,33 @@
+<div class="add-record" id="add-record-wrapper">
+
+  <form class="add-record__form info-card" name="addRecord">
+    <h3 class="add-record__title">Вес</h3>
+
+    <div class="form-group row">
+      <label for="add-record-input-date" class="col-sm-4 col-form-label">Дата</label>
+      <div class="col-sm-8">
+        <input type="date" class="form-control" id="add-record-input-date" name="date" value="{{date}}" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="add-record-input-time" class="col-sm-4 col-form-label">Время</label>
+      <div class="col-sm-8">
+        <input type="time" class="form-control" id="add-record-input-time" name="time" value="{{time}}" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="add-record-input-weight" class="col-sm-4 col-form-label">Вес</label>
+      <div class="col-sm-8">
+        <input type="number" class="form-control" id="add-record-input-weight" name="weight" step="0.01" required>
+      </div>
+    </div>
+
+    <div class="add-record__buttons">
+        <input type="button" class="add-record__button button" id="remove-add-record-button" value="Отмена">
+        <input type="submit" class="add-record__button add-record__button_submit button" id="save-record-button" value="Сохранить">
+    </div>
+
+  </form>
+</div>

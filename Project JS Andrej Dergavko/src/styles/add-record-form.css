@@ -1,0 +1,40 @@
+.add-record {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #eff3ff65;
+}
+
+.add-record__form {
+  display: block;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 60px;
+  background-color: rgba(255, 255, 255, 0.986);
+  color: rgb(59, 59, 59);
+  border-radius: 7px;
+}
+
+.add-record__title {
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 300;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.add-record__buttons {
+  display: flex;
+  margin: 35px -10px 0;
+  justify-content: space-between;
+}
+
+.add-record__button {
+  flex-grow: 1;
+  width: 100px;
+  margin: 0 10px;
+}
