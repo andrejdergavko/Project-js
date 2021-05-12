@@ -33,7 +33,7 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "handlebars": "^4.5.3"
   }
 }
